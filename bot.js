@@ -5,12 +5,12 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\GYMSOCK$/;
+      botRegex = /GYMSOCK/;
       
   var mess = request.text;
   var messUp = mess.toUpperCase();
   
-  var regexTest = messUp.search(/^\GYMSOCK$/);
+  var regexTest = messUp.search(/GYMSOCK/);
 	  
   if(regexTest > -1) {
     this.res.writeHead(200);
