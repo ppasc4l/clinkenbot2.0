@@ -15,7 +15,7 @@ function respond() {
   if(regexTest > -1) {
     this.res.writeHead(200);
     console.log(request.text);
-    console.log(messUP);
+    console.log(messUp);
     postMessage();
     this.res.end();
   }
