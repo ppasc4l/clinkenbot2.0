@@ -20,7 +20,7 @@ function respond() {
     this.res.end();
   }
   else {
-    console.log(request.text);
+    console.log(regexTest);
     this.res.writeHead(200);
     this.res.end();
   }
