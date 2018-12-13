@@ -14,11 +14,13 @@ function respond() {
 	  
   if(regexTest > -1) {
     this.res.writeHead(200);
+    console.log(request.text);
+    console.log(messUP);
     postMessage();
     this.res.end();
   }
   else {
-    console.log("don't care");
+    console.log(request.text);
     this.res.writeHead(200);
     this.res.end();
   }
